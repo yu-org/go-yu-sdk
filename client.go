@@ -63,6 +63,7 @@ func (c *YuClient) WriteChain(tripodName, funcName string, params any, leiPrice,
 	logrus.Debug("wrCall: ", c.url)
 
 	_, err = http.Post(c.url, "application/json", bytes.NewReader(bodyByt))
+	return err
 }
 
 func (c *YuClient) ReadChain(tripodName, funcName string, params any) ([]byte, error) {

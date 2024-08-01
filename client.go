@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"encoding/json"
 	"github.com/HyperService-Consortium/go-hexutil"
-	"github.com/sirupsen/logrus"
 	"github.com/yu-org/yu/common"
 	"github.com/yu-org/yu/core"
 	"github.com/yu-org/yu/core/keypair"
@@ -59,8 +58,6 @@ func (c *YuClient) WriteChain(tripodName, funcName string, params any, leiPrice,
 	if err != nil {
 		return err
 	}
-
-	logrus.Debug("wrCall: ", c.url)
 
 	_, err = http.Post(c.url, "application/json", bytes.NewReader(bodyByt))
 	return err

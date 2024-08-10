@@ -50,6 +50,7 @@ func (c *YuClient) WriteChain(tripodName, funcName string, params any, leiPrice,
 	}
 	postBody := &core.WritingPostBody{
 		Pubkey:    c.pubkey.StringWithType(),
+		Address:   c.pubkey.Address().String(),
 		Signature: hexutil.Encode(sig),
 		Call:      wrCall,
 	}

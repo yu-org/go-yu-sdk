@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"github.com/HyperService-Consortium/go-hexutil"
 	"github.com/yu-org/yu/common"
-	"github.com/yu-org/yu/core"
 	"github.com/yu-org/yu/core/keypair"
+	"github.com/yu-org/yu/core/protocol"
 	"io"
 	"net/http"
 )
@@ -48,7 +48,7 @@ func (c *YuClient) WriteChain(tripodName, funcName string, params any, leiPrice,
 	if err != nil {
 		panic(err)
 	}
-	postBody := &core.WritingPostBody{
+	postBody := &protocol.WritingPostBody{
 		Pubkey:    c.pubkey.StringWithType(),
 		Address:   c.pubkey.Address().String(),
 		Signature: hexutil.Encode(sig),

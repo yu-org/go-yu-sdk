@@ -2,3 +2,7 @@ github.com/yu-org/yu v0.0.0-20240801024016-16d4716b501d h1:+KsTotYssdO3zrvNoRtRA
 github.com/yu-org/yu v0.0.0-20240801024016-16d4716b501d/go.mod h1:WBUP1KQR60y8qx5eA974Kn6X1Ckq28tbx7s36i16FI0=
 github.com/yu-org/yu v0.0.0-20240809080918-60ba4a2161fa h1:pek3vTYJBkRHQiA8/DHy4v9psTpw5ORwT3drXQWVQWM=
 github.com/yu-org/yu v0.0.0-20240809080918-60ba4a2161fa/go.mod h1:WBUP1KQR60y8qx5eA974Kn6X1Ckq28tbx7s36i16FI0=
+github.com/yu-org/yu v0.0.0-20240810035100-920a0c27b7bd h1:uCDt9D/n4fa/BwgARm/BIdKTEqd/nz1SACHM5ug2oBk=
+github.com/yu-org/yu v0.0.0-20240810035100-920a0c27b7bd/go.mod h1:WBUP1KQR60y8qx5eA974Kn6X1Ckq28tbx7s36i16FI0=
+github.com/yu-org/yu v0.0.0-20240810040802-eabfcef64cdc h1:MiyLEaJQFcZf2u33WALMH4VUM71feI8XSb7kKWXerWE=
+github.com/yu-org/yu v0.0.0-20240810040802-eabfcef64cdc/go.mod h1:WBUP1KQR60y8qx5eA974Kn6X1Ckq28tbx7s36i16FI0=

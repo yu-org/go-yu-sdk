@@ -1,4 +1,4 @@
-module go-yu-sdk
+module github.com/yu-org/go-yu-sdk
 
 go 1.21.4
 

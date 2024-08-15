@@ -447,6 +447,8 @@ github.com/willf/bitset v1.1.3/go.mod h1:RjeCKbqT1RxIR/KWY6phxZiaY1IyutSBfGjNPyS
 github.com/xlab/treeprint v0.0.0-20180616005107-d6fb6747feb6/go.mod h1:ce1O1j6UtZfjr22oyGxGLbauSBp2YVXpARAosm7dHBg=
 github.com/yu-org/yu v0.0.0-20240810040802-eabfcef64cdc h1:MiyLEaJQFcZf2u33WALMH4VUM71feI8XSb7kKWXerWE=
 github.com/yu-org/yu v0.0.0-20240810040802-eabfcef64cdc/go.mod h1:WBUP1KQR60y8qx5eA974Kn6X1Ckq28tbx7s36i16FI0=
+github.com/yu-org/yu v0.0.0-20240812080857-f6a58509685f h1:rI9JMQa0b3WnijEFsJeQmyZMH4Xp0XZT0+qz77lC6a0=
+github.com/yu-org/yu v0.0.0-20240812080857-f6a58509685f/go.mod h1:WBUP1KQR60y8qx5eA974Kn6X1Ckq28tbx7s36i16FI0=
 github.com/yuin/goldmark v1.2.1/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 go.opencensus.io v0.21.0/go.mod h1:mSImk1erAIZhrmZN+AvHh14ztQfjbGwt4TtuofqLduU=
 go.opencensus.io v0.22.0/go.mod h1:+kGneAE2xo2IficOXnaByMWTGM9T73dGwxeWcUqIpI8=

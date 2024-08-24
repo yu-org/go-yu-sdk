@@ -4,7 +4,7 @@ go 1.21.4
 
 require (
 	github.com/HyperService-Consortium/go-hexutil v1.0.1
-	github.com/yu-org/yu v0.0.0-20240812080857-f6a58509685f
+	github.com/yu-org/yu v1.0.0
 )
 
 require (

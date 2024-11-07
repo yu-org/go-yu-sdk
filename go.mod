@@ -1,10 +1,10 @@
 module github.com/yu-org/go-yu-sdk
 
-go 1.21.4
+go 1.23.0
 
 require (
 	github.com/HyperService-Consortium/go-hexutil v1.0.1
-	github.com/yu-org/yu v1.0.0
+	github.com/yu-org/yu v1.2.6
 )
 
 require (
@@ -49,7 +49,7 @@ require (
 	github.com/petermattis/goid v0.0.0-20180202154549-b0b1615b78e5 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/sasha-s/go-deadlock v0.3.1 // indirect
-	github.com/sirupsen/logrus v1.9.0 // indirect
+	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/tendermint/tendermint v0.34.24 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect

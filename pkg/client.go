@@ -12,9 +12,11 @@ import (
 )
 
 type YuClient struct {
-	url     string
-	privkey keypair.PrivKey
-	pubkey  keypair.PubKey
+	url      string
+	leiPrice uint64
+	tips     uint64
+	privkey  keypair.PrivKey
+	pubkey   keypair.PubKey
 }
 
 func NewClient(url string) *YuClient {
@@ -26,7 +28,17 @@ func (c *YuClient) WithKeys(privkey keypair.PrivKey, pubkey keypair.PubKey) *YuC
 	return c
 }
 
-func (c *YuClient) WriteChain(tripodName, funcName string, params any, leiPrice, tips uint64) error {
+func (c *YuClient) WithLeiPrice(leiPrice uint64) *YuClient {
+	c.leiPrice = leiPrice
+	return c
+}
+
+func (c *YuClient) WithTips(tips uint64) *YuClient {
+	c.tips = tips
+	return c
+}
+
+func (c *YuClient) WriteChain(tripodName, funcName string, params any) error {
 	paramsByt, err := json.Marshal(params)
 	if err != nil {
 		return err
@@ -35,8 +47,8 @@ func (c *YuClient) WriteChain(tripodName, funcName string, params any, leiPrice,
 		TripodName: tripodName,
 		FuncName:   funcName,
 		Params:     string(paramsByt),
-		LeiPrice:   leiPrice,
-		Tips:       tips,
+		LeiPrice:   c.leiPrice,
+		Tips:       c.tips,
 	}
 
 	byt, err := json.Marshal(wrCall)

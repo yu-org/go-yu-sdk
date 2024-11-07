@@ -1,4 +1,4 @@
-package go_yu_sdk
+package pkg
 
 import (
 	"encoding/json"

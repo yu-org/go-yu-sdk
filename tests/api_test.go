@@ -2,7 +2,7 @@ package tests
 
 import (
 	"github.com/stretchr/testify/assert"
-	go_yu_sdk "github.com/yu-org/go-yu-sdk"
+	go_yu_sdk "github.com/yu-org/go-yu-sdk/pkg"
 	"github.com/yu-org/yu/apps/asset"
 	"github.com/yu-org/yu/apps/poa"
 	"github.com/yu-org/yu/core/keypair"
@@ -98,4 +98,3 @@ func transferAsset(t *testing.T) {
 	err = yuCli.StopChain()
 	assert.NoError(t, err)
 }
-
